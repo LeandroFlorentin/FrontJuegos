@@ -1,0 +1,772 @@
+.containerGlobalVideoGames {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.containerSup {
+    height: 15vh;
+    background-color: #000;
+}
+
+.headerVid {
+    position: absolute;
+    right: 0px;
+}
+
+.inicio {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 95vw;
+    cursor: pointer;
+    top: -5px
+}
+
+.crearJuego {
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    margin-right: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 204, 255);
+    color: rgb(0, 204, 255);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.crearJuego:hover {
+    background-color: rgb(0, 204, 255);
+    border: none;
+    color: #000;
+}
+
+.volverLanding {
+    position: absolute;
+    top: 5px;
+    font-size: 13px;
+    border-radius: 5px;
+    padding: 2px 10px;
+    border: 1px solid rgb(0, 204, 255);
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(0, 204, 255);
+    transition: 1s background-color, 250ms color, border 250ms;
+}
+
+.volverLanding:hover {
+    color: #000;
+    border: 1px solid #000;
+    background-color: rgb(0, 204, 255);
+}
+
+.containerHidden {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.containerBtnPag {
+    display: flex;
+    padding-top: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    height: 60px;
+}
+
+.btnAnterior {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.btnSiguiente {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.containerSup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lineaArriba {
+    position: absolute;
+    background-color: aqua;
+    width: 80px;
+    height: 2px;
+    right: 93.3%;
+    bottom: 0;
+    animation: izdere 1s infinite;
+}
+
+.lineaAbajo {
+    position: absolute;
+    background-color: aqua;
+    width: 80px;
+    height: 1px;
+    left: 93.3%;
+    top: 0;
+    animation: dereiz 1s infinite;
+}
+
+@keyframes dereiz {
+    from {
+        transform: translateX(120%);
+    }
+
+    to {
+        transform: translateX(-2000%);
+    }
+}
+
+@keyframes izdere {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(2000%);
+    }
+}
+
+.backgroundMenu {
+    background-color: rgb(0, 0, 0, .6);
+    width: 100vw;
+    height: auto;
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    z-index: 99999;
+}
+
+.menu {
+    float: left;
+    margin-top: 18px;
+    background-color: #000;
+    width: 450px;
+    height: 100%;
+    animation: menuuu ease-in 0.2s;
+}
+
+@keyframes menuuu {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+.containerText {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.h3Genero {
+    color: rgb(0, 204, 255);
+    border-bottom: 1px solid rgb(0, 204, 255);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.containerParrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.parrafoGen {
+    color: rgb(0, 204, 255);
+    cursor: pointer;
+    display: flex;
+    height: 26px;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 8.55px;
+    border: 1px solid rgb(0, 204, 255);
+    transition: 1s color, 700ms background-color;
+}
+
+.parrafoGen:hover {
+    background-color: rgb(0, 204, 255);
+    color: #000;
+}
+
+.activeGen {
+    color: #000;
+    cursor: pointer;
+    display: flex;
+    height: 26px;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 8.55px;
+    border: 1px solid #000;
+    background-color: rgb(0, 204, 255);
+}
+
+.botonNum {
+    color: rgb(0, 204, 255);
+    margin: 0px 15px;
+    border: 1px solid rgb(0, 204, 255);
+    padding: 0px 7px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.botonNum:hover {
+    background-color: rgb(0, 204, 255);
+    color: #000;
+    border: 1px solid #000;
+}
+
+.activeBtn {
+    color: #000;
+    margin: 0px 15px;
+    border: 1px solid #000;
+    padding: 0px 7px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(0, 204, 255);
+}
+
+.containBoton {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 26px;
+}
+
+.tituloFil {
+    position: absolute;
+    left: 320px;
+    color: rgb(0, 204, 255);
+    border-bottom: 1px solid rgb(0, 204, 255);
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.tituloFil:hover {
+    color: rgb(0, 204, 255);
+}
+
+.btnFil {
+    margin-top: 8.55px;
+    width: 170px;
+    height: 30px;
+    color: rgb(0, 204, 255);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 204, 255);
+    transition: 1s color, 700ms background-color;
+}
+
+.btnFil:hover {
+    background-color: rgb(0, 204, 255);
+    color: #000;
+}
+
+.active {
+    margin-top: 8.55px;
+    width: 170px;
+    height: 30px;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: rgb(0, 204, 255);
+}
+
+.botonMenu {
+    color: rgb(0, 204, 255);
+    background-color: #000;
+    border: 1px solid rgb(0, 204, 255);
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 31%;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+    margin-right: 5px;
+    transition: 1s color, 700ms background-color;
+}
+
+.botonMenu:hover {
+    background-color: rgb(0, 204, 255);
+    color: #000;
+}
+
+.buscarInput {
+    width: 500px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 204, 255);
+    color: rgb(0, 204, 255);
+    outline: none;
+    text-align: center;
+}
+
+.buscarInput::placeholder {
+    color: rgb(0, 204, 255);
+    padding-left: 5px;
+}
+
+.btnBuscar {
+    background-color: transparent;
+    border: 1px solid rgb(0, 204, 255);
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s background-color, 250ms color, 250ms border;
+    font-size: 15px;
+    color: rgb(0, 204, 255);
+}
+
+.btnBuscar:hover {
+    background-color: rgb(0, 204, 255);
+    border: none;
+    color: #000;
+}
+
+.containerJueguitos {
+    padding-top: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+    background-color: rgb(18, 18, 18, .9);
+}
+
+.containerGloJue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    margin: 15px 0px;
+}
+
+.containerJueguito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(18, 18, 18);
+    height: 60vh;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.containerJueguito:hover {
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 2px 0px #333;
+}
+
+.tituloJueguito {
+    align-items: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.deleteGame {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 15px;
+    color: rgb(0, 204, 255);
+    border: 1px solid rgb(0, 204, 255);
+    cursor: pointer;
+    transition: 1s background-color, 250ms color, 250ms border;
+}
+
+.deleteGame:hover {
+    border: 1px solid transparent;
+    background-color: rgb(0, 204, 255);
+    color: #000;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 1);
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.cardImg {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    transform: scale(1.15);
+    transition: transform .75s, opacity 1s;
+    cursor: pointer;
+}
+
+.card:hover .cardImg {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.divSup {
+    background-color: rgb(0, 204, 255);
+    width: 95%;
+    height: 3.5px;
+}
+
+.divMed {
+    background-color: rgba(0, 204, 255, 0.74);
+    width: 85%;
+    height: 5.83px;
+}
+
+.divInf {
+    background-color: rgba(0, 204, 255, 0.541);
+    width: 75%;
+    height: 5.83px;
+}
+
+.botonVideo {
+    height: 30px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 204, 255);
+    color: rgb(0, 204, 255);
+    font-size: 15px;
+    cursor: pointer;
+    transition: 1s all, 250ms background-color, 250ms color;
+}
+
+.botonVideo:hover {
+    background-color: rgb(0, 204, 255);
+    border: none;
+    color: #000;
+}
+
+.generoString {
+    display: flex;
+}
+
+.genero {
+    color: #fff;
+}
+
+.footer {
+    height: 15vh;
+    background-color: #000;
+}
+
+.divHola {
+    height: 70vh;
+    background-color: rgb(0, 0, 0, .89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divHola h5 {
+    font-size: 35px;
+    color: rgb(0, 204, 255);
+    border-bottom: 1px solid rgb(0, 204, 255);
+}
+
+.btnElegido {
+    margin-top: 8.55px;
+    width: 170px;
+    height: 30px;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: transparent;
+    background-color: rgb(0, 204, 255);
+    border: 1px solid #000;
+}
+
+.aperDer {
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(30, 30, 30), #000);
+    position: absolute;
+    z-index: 999999999999998;
+    right: -51%;
+    top: 0;
+    animation: aperturaDer ease 2.5s;
+}
+
+@keyframes aperturaDer {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.aperIzq {
+    width: 50%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(30, 30, 30), #000);
+    position: absolute;
+    z-index: 999999999999998;
+    left: -51%;
+    top: 0;
+    animation: aperturaIzq ease 2.5s;
+}
+
+@keyframes aperturaIzq {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.linkedin {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 90px;
+    cursor: pointer;
+}
+
+.github {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+}
+
+.gmail {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.containerRedes {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.linkedinFoot {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.gmailFoot {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.githubFoot {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.divEliminando {
+    position: absolute;
+    background-color: rgb(3, 3, 3, 0.75);
+    width: 430px;
+    height: 60vh;
+    border-radius: 10px;
+}
+
+.divFlex {
+    width: 450px;
+    height: 438px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h3Eliminando {
+    font-size: 30px;
+    color: rgb(0, 204, 255);
+}
+
+@media (max-width:1024px) {
+    .botonMenu {
+        left: 40%;
+    }
+}
+
+@media (max-width:768px) {
+
+    .menu {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerText {
+        margin-top: 20px;
+    }
+
+    .tituloFil {
+        left: 79%;
+    }
+
+    .botonMenu {
+        left: 96%;
+        top: 40px;
+    }
+
+    .constainerBuscar {
+        margin-top: 20px;
+    }
+
+    .buscarInput {
+        margin-top: 20px;
+        width: 300px;
+    }
+
+    .crearJuego {
+        margin-top: 20px;
+    }
+
+    .inicio {
+        margin-top: 20px;
+        right: 93vw;
+    }
+}
+
+@media (max-width:425px) {
+
+
+    .botonMenu {
+        left: 92%;
+        top: 30px;
+    }
+
+    .tituloFil {
+        left: 72%;
+    }
+
+    .botonNum {
+        margin: 0px 10px;
+    }
+
+    .activeBtn {
+        margin: 0px 10px;
+    }
+
+    .buscarInput {
+        margin-top: 50px;
+        width: 300px;
+        height: 30px;
+    }
+
+    .btnBuscar {
+        width: 60px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .crearJuego {
+        position: absolute;
+        right: 0px;
+        bottom: 100%;
+        width: 90px;
+        height: 35px;
+        font-size: 14px;
+    }
+
+    .inicio {
+        right: 93vw;
+        top: -65px;
+        right: 88vw;
+    }
+
+    .containerJueguito {
+        width: 98%;
+        height: 80vh;
+    }
+
+    .card {
+        width: 95%;
+        height: 40vh;
+    }
+
+    .gmail {
+        display: none;
+    }
+
+    .linkedin {
+        display: none;
+    }
+
+    .github {
+        display: none;
+    }
+
+    .containerRedes {
+        width: 80%;
+    }
+}
+
+@media (max-width:375px) {
+    .buscarInput {
+        width: 250px;
+    }
+}
+
+@media (max-width:325px) {
+    .botonNum {
+        margin: 0px 5px;
+    }
+
+    .activeBtn {
+        margin: 0px 5px;
+    }
+
+    .inicio {
+        right: 93vw;
+        top: -65px;
+        right: 85vw;
+    }
+}
