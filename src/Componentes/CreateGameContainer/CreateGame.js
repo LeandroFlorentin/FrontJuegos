@@ -51,7 +51,7 @@ const CreateGame = () => {
                 if (!e.target.value.length) setErrorDescrip({ errors: false })
                 else setErrorDescrip({ errors: true })
             }
-            if (String(e.target.name === "rating")) {
+            if (String(e.target.name) === "rating") {
                 if (parseFloat(e.target.value) > 0 && parseFloat(e.target.value) <= 5) setErrorRating({ errors: true })
                 else setErrorRating({ errors: false })
             }
