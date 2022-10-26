@@ -33,7 +33,7 @@ const CreateGame = () => {
         if (String(e.target.name) === "platforms" || String(e.target.name) === "genres") {
             if (![...text.platforms, e.target.value].length) setErrorPlat({ errors: false })
             if ([...text.platforms, e.target.value].length) setErrorPlat({ errors: true })
-            setText({
+            if (text[e.target.name].includes(e.target.value)) setText({
                 ...text,
                 [e.target.name]: [...text[e.target.name], e.target.value]
             })
