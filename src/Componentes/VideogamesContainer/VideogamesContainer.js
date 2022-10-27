@@ -5,9 +5,9 @@ import VideoGames from '../Videogames/Videogames.js'
 
 const VideogamesContainer = () => {
     const dispatch = useDispatch()
-    const { videoGames, videoGamesActu } = useSelector(state => state)
+    const { videoGames, videoGameActu } = useSelector(state => state)
     useEffect(() => {
-        if (videoGames.length === videoGamesActu.length) {
+        if (videoGames.length === videoGameActu.length) {
             dispatch(getVideogames())
             dispatch(getGenres())
         }
