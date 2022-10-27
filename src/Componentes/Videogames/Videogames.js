@@ -248,7 +248,7 @@ const VideoGames = () => {
                                                 </div>
                                                 <div className="containerParrafo">
                                                     <h3 className="h3Genero">Generos</h3>
-                                                    {genres.map((gen, ubi) => <p key={ubi} className={actual.genero === gen ? "activeGen" : "parrafoGen"} onClick={() => filtrarGenero(gen)}>{gen}</p>)}
+                                                    {[...new Set(genres)].map((gen, ubi) => <p key={ubi} className={actual.genero === gen ? "activeGen" : "parrafoGen"} onClick={() => filtrarGenero(gen)}>{gen}</p>)}
                                                 </div>
                                             </div>
                                         </div>
