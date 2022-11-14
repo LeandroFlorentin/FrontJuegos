@@ -44,6 +44,7 @@
     border-radius: 20px;
     animation: moverAlRevez ease 2.5s;
     transition: 1s background-color, 250ms color, 250ms border;
+    overflow: hidden;
 }
 
 .botonLad::after {
