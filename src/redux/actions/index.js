@@ -7,7 +7,7 @@ export const CLEAR_GAME = 'CLEAR_GAME';
 export const DELETE_GAME = 'DELETE_GAME';
 export const SEARCH_VIDEOGAME = 'SEARCH_VIDEOGAME';
 export const ALL_GAMES = 'ALL_GAMES'
-const baseUrl = 'https://juegos.herokuapp.com';
+const baseUrl = 'https://backend-juegos-production.up.railway.app';
 
 export const allGames = () => (dispatch) => {
     return dispatch({ type: ALL_GAMES })
