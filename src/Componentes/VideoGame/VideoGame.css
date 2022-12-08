@@ -3,6 +3,11 @@
     padding: 0px;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .containerGameUniGlo {
     min-width: 100vw;
     min-width: 100vw;
@@ -150,8 +155,29 @@
 }
 
 @media(max-width:425px) {
+    .containerGameUni {
+        height: 120vh;
+    }
+
+    .divDerText {
+        margin: 0;
+    }
+
+    .pDescrip {
+        text-align: center;
+    }
+
+    .h5Descrip {
+        font-size: 10px;
+    }
+
+    .containerRaRe {
+        margin-top: 20px;
+    }
+
     .imgJuego {
-        width: 425px;
+        width: 100%;
+        margin: 0;
     }
 
     .containerGameUniGlo {
