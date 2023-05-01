@@ -7,7 +7,7 @@ export const CLEAR_GAME = 'CLEAR_GAME';
 export const DELETE_GAME = 'DELETE_GAME';
 export const SEARCH_VIDEOGAME = 'SEARCH_VIDEOGAME';
 export const ALL_GAMES = 'ALL_GAMES'
-const baseUrl = 'ec2-18-228-232-214.sa-east-1.compute.amazonaws.com:3001';
+const baseUrl = 'http://ec2-18-228-232-214.sa-east-1.compute.amazonaws.com:3001';
 
 export const allGames = () => (dispatch) => {
     return dispatch({ type: ALL_GAMES })
